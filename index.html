@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiên Văn Việt Nam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+</head>
+
+<body>
+  <video autoplay loop muted id="bg-video">
+    <source src="./video/gfp-astro-timelapse.mp4" type="video/mp4">
+  </video>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+  <header class="container">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand brandlogo" href="#">
+          <img src="./images/logo.png" id="logo" alt="">
+          <h4>ASTRONOMIA</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100 text-center">
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link active p-0 pb-lg-4 h-100" aria-current="page" href="#">Trang Chủ</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Giới Thiệu</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Khoá Học</a>
+            </li>
+            <li class="nav-item flex-grow-1">
+              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Liên Hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container mt-2">
+    <h5 class="text-light">Các Hành Tinh Trong Hệ Mặt Trời</h5>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div id="carouselExampleCaptions" class="carousel slide h-100 rounded border border-white 
+          overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item h-100 active">
+              <img src="./images/saturn.png" class="d-block w-100 h-100" alt="Saturn">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sao Thổ - Saturn</h5>
+                <p>Sao Thổ được đặt theo tên của thần Thời gian Cronus trong tiếng Hy Lạp; Trong tiếng La Mã, Cronus
+                  nghĩa là Saturn.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./images/jupiter.png" class="d-block w-100 h-100" alt="Jupiter">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sao Mộc - Jupiter</h5>
+                <p>Sao Mộc được đặt theo tên của thần Zeus trong tiếng Hy Lạp; Trong tiếng La Mã, Zeus nghĩa là Jupiter.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./images/uranus.png" class="d-block w-100 h-100" alt="Uranus">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Sao Thiên Vương - Uranus</h5>
+                <p>Sao Thiên Vương được đặt theo tên của thần đảm trách bầu trời Uranus trong tiếng Hy Lạp</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 d-md-flex flex-column justify-content-between mt-2 mt-md-0">
+        <div class="row">
+          <div class="col-6">
+            <figure class="figure">
+              <img src="./images/mercury.png" class="figure-img img-fluid rounded border border-white 
+              overflow-hidden" alt="Mercury" data-bs-toggle="tooltip" data-bs-placement="top" title="Mercury">
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure class="figure">
+              <img src="./images/venus.png" class="figure-img img-fluid rounded border border-white 
+              overflow-hidden" alt="Venus" data-bs-toggle="tooltip" data-bs-placement="top" title="Venus">
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <figure class="figure mb-md-0">
+              <img src="./images/neptune.png" class="figure-img img-fluid rounded border border-white 
+              overflow-hidden mb-0" alt="Neptune" data-bs-toggle="tooltip" data-bs-placement="top" title="Neptune">
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure class="figure mb-md-0">
+              <img src="./images/mars.png" class="figure-img img-fluid rounded border border-white 
+              overflow-hidden mb-0" alt="Mars" data-bs-toggle="tooltip" data-bs-placement="top" title="Mars">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 justify-content-center">
+      <h5 class="text-light text-center">
+        Các khóa học sắp khai giảng (Quý khách hàng vui lòng liên hệ Văn phòng công ty để đăng ký)
+      </h5>
+      <button type="button" class="btn btn-primary w-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Xem địa chỉ Văn phòng công ty
+      </button>
+    </div>
+    <div class="row mt-4">
+      <table data-toggle="table" data-mobile-responsive="true" data-check-on-init="true"
+        class="table table-striped table-light table-hover">
+        <thead>
+          <tr>
+            <th>Mã Khóa Học</th>
+            <th>Khóa Học</th>
+            <th>Ngày Khai Giảng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CB001</td>
+            <td>Thiên Văn học Cơ Bản</td>
+            <td>30/11/2021</td>
+          </tr>
+          <tr>
+            <td>VT002</td>
+            <td>Vũ Trụ Học Cơ Bản</td>
+            <td>01/12/2021</td>
+          </tr>
+          <tr>
+            <td>QS001</td>
+            <td>Học Máy Và Thiên Văn Học</td>
+            <td>15/12/2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <footer class="container bg-dark text-center text-white mt-4">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Copyright 2021 Bản quyền thuộc về Công ty Astronomia© .
+    </div>
+  </footer>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary">
+          <h4 class="modal-title text-light" id="exampleModalLabel">Địa chỉ Đăng ký Khoá Học</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-success text-light">
+          VĂN PHÒNG: Tầng 8, Toà nhà Universial. Số 900A, đường Quang Trung, TP. Cần Thơ
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
