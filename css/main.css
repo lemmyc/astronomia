@@ -55,6 +55,21 @@ body {
 .navbar-toggler:focus {
     box-shadow: none;
 }
+#language{
+	float:right;
+	top:0px;
+    position: absolute;
+    right: 0;
+    margin-bottom: .5rem;
+
+}
+#language img{
+	border: 1px solid white;
+	margin:3px;
+}
+#language img:hover{
+	/* border: 1px solid yellow; */
+}
 /* Preloader 
 	https://ihatetomatoes.net/create-custom-preloading-screen/
 */
@@ -109,4 +124,15 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 /*============ Preloader ends ==================================*/
 #logo{
     transform: translateX(30%);
+}
+.lang-sw{
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 4px;
+    color: white;
+    cursor: pointer;
+}
+.lang-sw:hover{
+    opacity: .8;
 }

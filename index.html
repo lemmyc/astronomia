@@ -22,6 +22,7 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
   <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+  <script src="./scripts/labels.js" defer></script>
   <style>
     .navbar-brand:hover{
       color: white;
@@ -45,7 +46,7 @@
   <header class="container">
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid">
-        <a class="navbar-brand brandlogo" href="#">
+        <a class="navbar-brand brandlogo mt-3" href="#">
           <img src="./images/logo.png" id="logo" alt="">
           <h4>ASTRONOMIA</h4>
         </a>
@@ -54,21 +55,31 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 text-center">
+          <ul class="navbar-nav w-100 text-center mt-2">
             <li class="nav-item flex-grow-1">
-              <a class="nav-link active p-0 pb-lg-4 h-100" aria-current="page" href="#">Trang Chủ</a>
+              <a id="MENU_HOME" class="multilang nav-link active p-0 pb-lg-4 h-100" aria-current="page" href="#">Trang Chủ</a>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Giới Thiệu</a>
+              <a id="MENU_ABOUT_US" class="multilang nav-link p-0 pb-lg-4  h-100" href="#">Giới Thiệu</a>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link p-0 pb-lg-4 h-100 d-sm-none d-md-block" href="#">Các Khoá Học</a>
-              <a class="fs-6 d-none nav-link p-0 pb-lg-4 h-100 d-sm-block d-md-none" href="#">Các Khoá Học</a>
+              <a id="MENU_COURSES" class="multilang nav-link p-0 pb-lg-4 h-100 d-sm-none d-md-block" href="#">Các Khoá Học</a>
+              <a id="MENU_COURSES" class="multilang fs-6 d-none nav-link p-0 pb-lg-4 h-100 d-sm-block d-md-none" href="#">Các Khoá Học</a>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Liên Hệ</a>
+              <a id="MENU_CONTACT" class="multilang nav-link p-0 pb-lg-4  h-100" href="#">Liên Hệ</a>
             </li>
           </ul>
+          <div id="language">
+            <span href="#" class="lang-sw"  onclick="changeLang('en-US')">
+              <img src="./images/us.png" alt="US">
+              <span>English</span>
+            </span>
+            <span href="#" class="lang-sw" onclick="changeLang('vi-VN')" >
+              <img src="./images/vn.png" alt="VN">
+              <span>Tiếng Việt</span>
+            </span>
+          </div>
         </div>
       </div>
     </nav>
