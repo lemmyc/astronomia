@@ -22,6 +22,14 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
   <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/mobile/bootstrap-table-mobile.js"></script>
+  <style>
+    .navbar-brand:hover{
+      color: white;
+    }
+    .nav-link:hover{
+      color: #0b5ed7!important;
+    }
+  </style>
 </head>
 
 <body>
@@ -54,7 +62,8 @@
               <a class="nav-link p-0 pb-lg-4  h-100" href="#">Giới Thiệu</a>
             </li>
             <li class="nav-item flex-grow-1">
-              <a class="nav-link p-0 pb-lg-4  h-100" href="#">Khoá Học</a>
+              <a class="nav-link p-0 pb-lg-4 h-100 d-sm-none d-md-block" href="#">Các Khoá Học</a>
+              <a class="fs-6 d-none nav-link p-0 pb-lg-4 h-100 d-sm-block d-md-none" href="#">Các Khoá Học</a>
             </li>
             <li class="nav-item flex-grow-1">
               <a class="nav-link p-0 pb-lg-4  h-100" href="#">Liên Hệ</a>
@@ -140,10 +149,10 @@
     </div>
     <div class="row mt-4 justify-content-center">
       <h5 class="text-light text-center">
-        Các khóa học sắp khai giảng (Quý khách hàng vui lòng liên hệ Văn phòng công ty để đăng ký)
+        Các khóa học sắp khai giảng<br/> (Quý khách hàng vui lòng liên hệ Văn phòng Công Ty để đăng ký)
       </h5>
       <button type="button" class="btn btn-primary w-auto" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Xem địa chỉ Văn phòng công ty
+        Xem thông tin  <br/> liên lạc Văn phòng Công Ty
       </button>
     </div>
     <div class="row mt-4">
